@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Maggie 💜 | My Baby</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= PASSWORD SCREEN ================= -->
+  <div id="lockScreen" class="lock-screen">
+
+    <div class="lock-card">
+
+      <div class="lock-flower">🌸</div>
+
+      <p class="tiny-label">A PRIVATE PLACE FOR</p>
+
+      <h1>Maggie <span>♡</span></h1>
+
+      <p class="lock-subtitle">
+        Only my Baby gets to come in.
+      </p>
+
+      <div class="password-box">
+        <input
+          type="password"
+          id="passwordInput"
+          placeholder="Enter our secret..."
+        >
+        <button onclick="unlockLove()">Enter ♡</button>
+      </div>
+
+      <p id="passwordError"></p>
+
+      <div class="lock-hearts">
+        ♡ &nbsp; ♡ &nbsp; ♡
+      </div>
+
+      <small>
+        Hint: It's the names of two people who belong together.
+      </small>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= MAIN WEBSITE ================= -->
+
+  <main id="loveSite" class="hidden">
+
+    <!-- Floating decorations -->
+    <div class="floating-decoration decoration-1">🌸</div>
+    <div class="floating-decoration decoration-2">💜</div>
+    <div class="floating-decoration decoration-3">🌷</div>
+    <div class="floating-decoration decoration-4">♡</div>
+    <div class="floating-decoration decoration-5">🌺</div>
+
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+
+      <div class="logo">
+        M<span>♡</span>P
+      </div>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#story">Our Story</a>
+        <a href="#gallery">Memories</a>
+        <a href="#dates">Dates</a>
+        <a href="#letter">Letter</a>
+      </div>
+
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="hero">
+
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          MADE WITH LOVE • FOR MY BABY
+        </div>
+
+        <h1>
+          Maggie,<br>
+          <span>my favorite person.</span>
+        </h1>
+
+        <p class="hero-text">
+          Nothing better than loving your best friend.
+        </p>
+
+        <p class="hero-small">
+          And somehow, I got lucky enough to call my best friend
+          <strong>Baby.</strong>
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#letter" class="primary-btn">
+            Read My Heart 💌
+          </a>
+
+          <a href="#gallery" class="secondary-btn">
+            Our Memories 📸
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="hero-heart">
+
+        <div class="glow"></div>
+
+        <div class="heart-shape">
+          ♥
+        </div>
+
+        <div class="heart-caption">
+          M + P
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= LOVE QUOTE ================= -->
+
+    <section class="quote-section">
+
+      <div class="quote-flower">✿</div>
+
+      <p class="quote">
+        “Some people search their whole lives
+        for their person.
+        <br>
+        I found mine in my best friend.”
+      </p>
+
+      <span>— Pablo ♡</span>
+
+    </section>
+
+
+    <!-- ================= STORY ================= -->
+
+    <section id="story" class="section">
+
+      <div class="section-heading">
+
+        <p class="section-label">THE TWO OF US</p>
+
+        <h2>
+          Our little corner<br>
+          of the universe.
+        </h2>
+
+      </div>
+
+      <div class="story-grid">
+
+        <div class="story-card">
+
+          <div class="story-icon">♡</div>
+
+          <h3>Best Friends</h3>
+
+          <p>
+            Before anything else, you're the person I want to
+            laugh with, talk to, annoy, and tell everything to.
+          </p>
+
+        </div>
+
+        <div class="story-card featured">
+
+          <div class="story-icon">💜</div>
+
+          <h3>My Baby</h3>
+
+          <p>
+            You're not just someone I love.
+            You're someone I genuinely enjoy having beside me.
+          </p>
+
+        </div>
+
+        <div class="story-card">
+
+          <div class="story-icon">🌸</div>
+
+          <h3>My Person</h3>
+
+          <p>
+            Through the good days, crazy days and everything
+            between, you're the person I choose.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= GALLERY ================= -->
+
+    <section id="gallery" class="section gallery-section">
+
+      <div class="section-heading centered">
+
+        <p class="section-label">OUR MEMORIES</p>
+
+        <h2>
+          Moments I want<br>
+          to keep forever.
+        </h2>
+
+        <p>
+          Upload our favorite pictures and build our little
+          digital memory wall.
+        </p>
+
+      </div>
+
+
+      <div class="upload-area">
+
+        <label for="photoUpload" class="upload-button">
+          + Add Our Photos
+        </label>
+
+        <input
+          type="file"
+          id="photoUpload"
+          accept="image/*"
+          multiple
+          hidden
+        >
+
+        <p>
+          Choose multiple photos from your phone or computer.
+        </p>
+
+      </div>
+
+
+      <div id="galleryGrid" class="gallery-grid">
+
+        <div class="empty-gallery">
+
+          <div>📸</div>
+
+          <h3>Our memories belong here.</h3>
+
+          <p>
+            Add your first photo above ❤️
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= DATE PLANNER ================= -->
+
+    <section id="dates" class="section dates-section">
+
+      <div class="section-heading">
+
+        <p class="section-label">OUR DATE BOOK</p>
+
+        <h2>
+          Where should<br>
+          we go next?
+        </h2>
+
+        <p>
+          Because dates shouldn't just live in our imagination.
+        </p>
+
+      </div>
+
+
+      <div class="date-layout">
+
+        <div class="date-form-card">
+
+          <h3>Plan a date 💜</h3>
+
+          <div class="input-group">
+
+            <label>Date name</label>
+
+            <input
+              type="text"
+              id="dateName"
+              placeholder="e.g. Sunset Dinner"
+            >
+
+          </div>
+
+          <div class="form-row">
+
+            <div class="input-group">
+
+              <label>Date</label>
+
+              <input type="date" id="dateDay">
+
+            </div>
+
+            <div class="input-group">
+
+              <label>Time</label>
+
+              <input type="time" id="dateTime">
+
+            </div>
+
+          </div>
+
+
+          <div class="input-group">
+
+            <label>Place</label>
+
+            <input
+              type="text"
+              id="datePlace"
+              placeholder="Where are we going?"
+            >
+
+          </div>
+
+
+          <div class="input-group">
+
+            <label>Little note</label>
+
+            <textarea
+              id="dateNote"
+              placeholder="Something special about this date..."
+            ></textarea>
+
+          </div>
+
+
+          <button class="primary-btn full-btn" onclick="addDate()">
+            Add To Our Date Book ♡
+          </button>
+
+        </div>
+
+
+        <div class="date-list-card">
+
+          <div id="dateList">
+
+            <div class="no-dates">
+
+              <div>🌷</div>
+
+              <h3>No dates planned yet.</h3>
+
+              <p>
+                Let's change that, Baby.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= LOVE COUNTER ================= -->
+
+    <section class="counter-section">
+
+      <div class="counter-content">
+
+        <p class="section-label">A LITTLE REMINDER</p>
+
+        <h2>
+          You are loved.
+        </h2>
+
+        <div class="big-heart">♥</div>
+
+        <p>
+          Today.
+          Tomorrow.
+          And all the ordinary days in between.
+        </p>
+
+        <button onclick="showLove()" class="primary-btn">
+          Tap for a surprise 💋
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= LOVE LETTER ================= -->
+
+    <section id="letter" class="section letter-section">
+
+      <div class="letter-wrapper">
+
+        <div class="envelope-decoration">
+          💌
+        </div>
+
+        <p class="section-label">A LETTER FOR YOU</p>
+
+        <h2>
+          Dear Baby,
+        </h2>
+
+        <div class="letter">
+
+          <p>
+            Maggie,
+          </p>
+
+          <p>
+            I don't think there is anything better than loving
+            your best friend.
+          </p>
+
+          <p>
+            Someone you can laugh with until your stomach hurts.
+            Someone you can be completely yourself around.
+            Someone who can make an ordinary day feel like
+            something worth remembering.
+          </p>
+
+          <p>
+            That's what you are to me.
+          </p>
+
+          <p>
+            You're my Baby, but you're also my person,
+            my favorite conversation, my favorite smile,
+            and one of the people I never want to imagine
+            my life without.
+          </p>
+
+          <p>
+            I hope we keep making memories, going on random
+            dates, laughing at stupid things, taking too many
+            pictures and choosing each other again and again.
+          </p>
+
+          <p>
+            This little website is just a tiny reminder that
+            somewhere in this crazy world, there is someone
+            who is very happy that you're his.
+          </p>
+
+          <p class="signature">
+            Forever your Pablo ♡
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= FINAL ================= -->
+
+    <section class="final-section">
+
+      <div class="final-flower">🌸</div>
+
+      <h2>
+        Maggie,
+      </h2>
+
+      <h3>
+        You're my favorite
+        <span>hello</span>
+        and my hardest
+        <span>goodbye.</span>
+      </h3>
+
+      <p>
+        I love you, Baby. 💜
+      </p>
+
+      <div class="final-hearts">
+        ♡　♥　♡　♥　♡
+      </div>
+
+    </section>
+
+
+    <footer>
+      Made with way too much love ♡
+      <br>
+      M + P
+    </footer>
+
+  </main>
+
+
+  <!-- SURPRISE MODAL -->
+
+  <div id="loveModal" class="modal">
+
+    <div class="modal-card">
+
+      <button class="close-modal" onclick="closeLove()">×</button>
+
+      <div class="modal-heart">💜</div>
+
+      <p class="section-label">HEY BABY...</p>
+
+      <h2>
+        In case nobody told you today...
+      </h2>
+
+      <p class="surprise-text">
+        You are incredibly special.
+        And somewhere out there is a guy who looks at you
+        and thinks,
+        <strong>
+          “How did I get this lucky?”
+        </strong>
+      </p>
+
+      <div class="modal-signature">
+        — Pablo ❤️
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
